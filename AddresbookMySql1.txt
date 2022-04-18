@@ -98,3 +98,19 @@ mysql> select * from Addressbook;
 | someshwar | baghel     | wxyz     | raipur    | chattisgarh   |   482004 |  918602203308 | somb@gmail.com        |
 +-----------+------------+----------+-----------+---------------+----------+---------------+-----------------------+
 ------------------------------------------------------------------------------------------------------
+//UC4 editing the existing contact by their firstname
+mysql> update Addressbook set lastname='vibhu' where firstname='ajit';
+Query OK, 1 row affected (0.06 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> select * from Addressbook;
++-----------+------------+----------+-----------+---------------+----------+---------------+-----------------------+
+| firstname | lastname   | address  | city      | state         | zip      | phonenumber   | email                 |
++-----------+------------+----------+-----------+---------------+----------+---------------+-----------------------+
+| ajit      | vibhu      | abcd     | lohara    | mh            |   482001 |  919850962723 | vibhute3@gmail.com    |
+| amit      | borale     | efgh     | mardi     | mh            |   482002 |  919922359594 | amit3@gmail.com       |
+| vivek     | mehta      | pqrs     | jaipur    | rajasthan     |   482003 |  919179547325 | vivekm@gmail.com      |
+| someshwar | baghel     | wxyz     | raipur    | chattisgarh   |   482004 |  918602203308 | somb@gmail.com        |
++-----------+------------+----------+-----------+---------------+----------+---------------+-----------------------+
+4 rows in set (0.01 sec)
+--------------------------------------------------------------------------------------------------------
